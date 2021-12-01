@@ -4,7 +4,9 @@ This year I'm attempting the challenges in python using jupyter notebooks
 
 ## Day 1: Sonar Sweep
 Nothing too special here, just a for loop and a simple comparison.
+
 My sliding frame implementation is very lazy :D
+
 ⭐⭐
 
 ## Day 2: ???
