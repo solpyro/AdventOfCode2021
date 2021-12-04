@@ -31,8 +31,9 @@ After reviewing the instructions **again** I realised the majority was recalcula
 ⭐
 
 ## Day 4: Giant Squid
-This is going to take some work just to parse the input data :/
+It took some work just to parse the input data! Running the bingo game also looked daunting, but breaking the tasks down enough made most of them easy enough. The tricky part was recognising a winning board.
 
+⭐
 
 ## Day 5: ???
 
