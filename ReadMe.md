@@ -33,7 +33,9 @@ After reviewing the instructions **again** I realised the majority was recalcula
 ## Day 4: Giant Squid
 It took some work just to parse the input data! Running the bingo game also looked daunting, but breaking the tasks down enough made most of them easy enough. The tricky part was recognising a winning board.
 
-⭐
+After looking through other solutions, I decidered there's no clever maths underneath this puzzle, so I'm solveing it in a bruteforcy way; running the solution to part 1 in a while loop, and removing the first winner from the list of boards as we go.
+
+⭐⭐
 
 ## Day 5: ???
 
