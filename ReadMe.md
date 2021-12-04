@@ -29,7 +29,7 @@ Lots of simple lsits and parsing characters in strings. At least calculating the
 # Verify Life Support Rating
 
 Reading the requirements was complicated, and I thought I needed the Gamma and Epsilon values here also. After implementing the filter method to take a flag list, passing in the Gamma or Epsilon flag 
-set, and implementing a recursive filter, I was getting the correct response for the CO~2~ scrubber value, but a bad value for the O~2~ generator. 
+set, and implementing a recursive filter, I was getting the correct response for the CO<sub>2</sub> scrubber value, but a bad value for the O<sub>2</sub> generator. 
 
 After reviewing the instructions **again** I realised the majority was recalculated at each filtered version of the report, not from the complete report. This meant copying part of the code I used in my `calculateGamma` method, and I could have refactored the calcultion fo both Gamma and Epsilon to use the new code, but since they won't be used in the future there's not much point.
 
