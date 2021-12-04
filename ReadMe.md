@@ -30,7 +30,9 @@ After reviewing the instructions **again** I realised the majority was recalcula
 
 ⭐
 
-## Day 4: ???
+## Day 4: Giant Squid
+This is going to take some work just to parse the input data :/
+
 
 ## Day 5: ???
 
