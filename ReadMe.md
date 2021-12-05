@@ -49,10 +49,12 @@ After looking through other solutions, I decidered there's no clever maths under
 - Iterate of part of a list: `for element in list[start:end]`
 - The difference & similarities between lists `[]` and dictionaries `{}`
 
-## Day 5: Hydrothermal Venture ⭐
+## Day 5: Hydrothermal Venture ⭐⭐
 
 Some basic assumptions made part 1 trickier than it should have been. Firstly, I hoped that I could just implement drawing lines in all directions, and filter the coordinates to just the straight lines, but I soon realized that the logic for drawing diagonal lines was more complicated (and probably specified in part 2).  
 My second mistake was just passing x1 and x2 into the `range` function. Since some of the lines go backwards, they weren't being drawn, and were giving me bad results. in the end I defined my range as `range(min(x1,x2),max(x1,x2)+1)` which is fine for straight lines, but will need revisiting for the diagonals.
+
+As I guessed, the diagonal behaviour is better defined here. I can't nicely merge my straight line and diagonal behaviours, so I'm using the `isStraight` method to decide which draw method to use. After my inital implementation, I was getting bad results for the test date, so I implenented a map renderer to see what's going wrong. After further investigation, it would appear I just hadn't committed some changes. It's not so obvious what's up to date in the jupyter kernal :/
 
 ## Day 6: ???
 
