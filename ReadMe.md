@@ -35,6 +35,7 @@ After reviewing the instructions **again** I realised the majority was recalcula
 
 - Ternary statments: `('trueValue' if isTrue else 'falseValue')`  
 - List filtering: `[element for element in list if isTrue]`
+- Enumerate list: `for i,v in enumerate(list)`
 
 ## Day 4: Giant Squid ⭐⭐
 
@@ -56,7 +57,9 @@ My second mistake was just passing x1 and x2 into the `range` function. Since so
 
 As I guessed, the diagonal behaviour is better defined here. I can't nicely merge my straight line and diagonal behaviours, so I'm using the `isStraight` method to decide which draw method to use. After my inital implementation, I was getting bad results for the test date, so I implenented a map renderer to see what's going wrong. After further investigation, it would appear I just hadn't committed some changes. It's not so obvious what's up to date in the jupyter kernal :/
 
-## Day 6: ???
+## Day 6: Lanternfish ⭐
+
+Compared to playing bingo witha squid or mapping the hudrothermal vents, part 1 seems really easy. Part 2 is obviously supposed to get us to write more efficient code... but how? Even for the test data, calculating the 256 day value took a long time.
 
 ## Day 7: ???
 
