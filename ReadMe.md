@@ -61,6 +61,8 @@ As I guessed, the diagonal behaviour is better defined here. I can't nicely merg
 
 Compared to playing bingo witha squid or mapping the hudrothermal vents, part 1 seems really easy. Part 2 is obviously supposed to get us to write more efficient code... but how? Even for the test data, calculating the 256 day value took a long time.
 
+Following [u/Montag__](https://www.reddit.com/r/adventofcode/comments/r9z49j/2021_day_6_solutions/hng4ef3/)'s hint, I rebuilt my algoritm to store the number of fish on a given day's count, rather than individual fish each with their own clock. Clearly a much more efficient system, but I'm a lazy coder.
+
 ## Day 7: ???
 
 ## Day 8: ???
