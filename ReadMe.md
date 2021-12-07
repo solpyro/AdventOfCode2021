@@ -63,13 +63,13 @@ Compared to playing bingo witha squid or mapping the hudrothermal vents, part 1 
 
 Following [u/Montag__](https://www.reddit.com/r/adventofcode/comments/r9z49j/2021_day_6_solutions/hng4ef3/)'s hint, I rebuilt my algoritm to store the number of fish on a given day's count, rather than individual fish each with their own clock. Clearly a much more efficient system, but I'm a lazy coder.
 
-## Day 7: The Treachery of Whales ⭐
+## Day 7: The Treachery of Whales ⭐⭐
 
 A quick check of the test data in excel shows that I need to be looking for the median average, not the mean. A quick google reminded me that python has useful libraries, before I try to roll my own median algorithm, so I'll just import `statistics` and write a one-liner function. Totalling the moves to the median place is also easy.
 
 With the changes in fuel consumption, it seems the median is a better fit. Since I've got `statistics` imported, I'll use their method, rather than impementing my own loop. Also the fuel increase appears to be a triangle number, so I can calculate the costs of a given move with `n(n+1)/2`.  
-That's my first **wrong anwer** of the year. Checking the subreddit for clues, I heeded [u/kroppeb](https://www.reddit.com/r/adventofcode/comments/rars4g/2021_day_7_why_do_these_values_work_spoilers/hnk7n2z/)'s advice that the mean finds the best result for n<sup>2</sup>, not `n(n+1)/2`. After a quick check of every result for the test data, I can be confident at least that the results are continuous, and there should be just one minimum value.  
-Either I start from the beginning and wait until I hit the min value, or I can try a binary search somehow... 
+That's my first **wrong anwer** of the year. Checking the subreddit for clues, I heeded [u/kroppeb](https://www.reddit.com/r/adventofcode/comments/rars4g/2021_day_7_why_do_these_values_work_spoilers/hnk7n2z/)'s advice that the mean finds the best result for *n<sup>2</sup>*, not *n(n+1)/2*. After a quick check of every result for the test data, I can be confident at least that the results are continuous, and there should be just one minimum value.  
+After reading more around the subject, it became apparent that the mean should get me close to the correct position, and from there I could just follow the gradient one way or the other.
 
 ### Techniques leared
 
