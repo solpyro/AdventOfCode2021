@@ -57,13 +57,15 @@ My second mistake was just passing x1 and x2 into the `range` function. Since so
 
 As I guessed, the diagonal behaviour is better defined here. I can't nicely merge my straight line and diagonal behaviours, so I'm using the `isStraight` method to decide which draw method to use. After my inital implementation, I was getting bad results for the test date, so I implenented a map renderer to see what's going wrong. After further investigation, it would appear I just hadn't committed some changes. It's not so obvious what's up to date in the jupyter kernal :/
 
-## Day 6: Lanternfish ⭐
+## Day 6: Lanternfish ⭐⭐
 
 Compared to playing bingo witha squid or mapping the hudrothermal vents, part 1 seems really easy. Part 2 is obviously supposed to get us to write more efficient code... but how? Even for the test data, calculating the 256 day value took a long time.
 
 Following [u/Montag__](https://www.reddit.com/r/adventofcode/comments/r9z49j/2021_day_6_solutions/hng4ef3/)'s hint, I rebuilt my algoritm to store the number of fish on a given day's count, rather than individual fish each with their own clock. Clearly a much more efficient system, but I'm a lazy coder.
 
-## Day 7: ???
+## Day 7: The Treachery of Whales ⭐
+
+A quick check of the test data in excel shows that I need to be looking for the median average, not the mean. A quick google reminded me that python has useful libraries, before I try to roll my own median algorithm, so I'll just import `statistics` and write a one-liner function. Totalling the moves to the median place is also easy.
 
 ## Day 8: ???
 
