@@ -77,7 +77,14 @@ After reading more around the subject, it became apparent that the mean should g
     - Not exactly learning, but when I couldn't use `++` I assumed `+=` was also off limits, until I saw a python snippet today
 - `statistics` library probably has some other useful things
 
-## Day 8: ???
+## Day 8: Seven Segment Search ⭐
+
+This was a hard day to get into. From the start of the scenario explanation I was trying to figure out how to completley decode the output values, and it was only at the end that we're told the scope for part 1 is **much** simpler.
+
+### Techniques leared
+
+- `namedtuple` It's been bugging me using the array notation to reference my tuples, especially when they aren't logically ordered members
+- `if len(number) in listOfNumbers` A nicer pattern for testing against multiple values, rather than testing each one separately
 
 ## Day 9: ???
 
