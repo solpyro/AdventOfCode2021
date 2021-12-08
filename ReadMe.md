@@ -77,14 +77,18 @@ After reading more around the subject, it became apparent that the mean should g
     - Not exactly learning, but when I couldn't use `++` I assumed `+=` was also off limits, until I saw a python snippet today
 - `statistics` library probably has some other useful things
 
-## Day 8: Seven Segment Search ⭐
+## Day 8: Seven Segment Search ⭐⭐
 
 This was a hard day to get into. From the start of the scenario explanation I was trying to figure out how to completley decode the output values, and it was only at the end that we're told the scope for part 1 is **much** simpler.
+
+As expected part 2 was more complicated, but after some thinking I had the logical rules (mostly) figured out. During implmentation of the analysis phase, I used a dictionary to help easily reference the different numbers I'd deduced, as I used their strings to help select the other numbers. Then reversing the dictionary before returning it, and having ordered all of the input strings alphabetically, made it quick work to derive the output numbers. My only mistake was forgetting that the figure 6 should contain the figure 5 and *not* the figure 4, so for a while one of the test lines was giving me problems. Once I'd modified tht rule, it was plain sailing.
 
 ### Techniques leared
 
 - `namedtuple` It's been bugging me using the array notation to reference my tuples, especially when they aren't logically ordered members
 - `if len(number) in listOfNumbers` A nicer pattern for testing against multiple values, rather than testing each one separately
+- `next(i for i in list if condition)` finds the first item in a list to match the condition
+- `all(char in haystack for char in needle)))` an esoteric one; this returns `True` if all characters in `needle` are also in `haystack`. Any extra characters in the haystack are ignored
 
 ## Day 9: ???
 
