@@ -90,7 +90,9 @@ As expected part 2 was more complicated, but after some thinking I had the logic
 - `next(i for i in list if condition)` finds the first item in a list to match the condition
 - `all(char in haystack for char in needle)))` an esoteric one; this returns `True` if all characters in `needle` are also in `haystack`. Any extra characters in the haystack are ignored
 
-## Day 9: ???
+## Day 9: Smoke Basin ⭐
+
+Part 1 was nice and simple. Part 2 is going to be a little more complicated, but shouldn't be too tricky. I guess I just need to grow each low point until the border cells are peaks, then store the size of that so I can pick the top three at the end. 
 
 ## Day 10: ???
 
