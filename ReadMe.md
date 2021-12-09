@@ -90,9 +90,15 @@ As expected part 2 was more complicated, but after some thinking I had the logic
 - `next(i for i in list if condition)` finds the first item in a list to match the condition
 - `all(char in haystack for char in needle)))` an esoteric one; this returns `True` if all characters in `needle` are also in `haystack`. Any extra characters in the haystack are ignored
 
-## Day 9: Smoke Basin ⭐
+## Day 9: Smoke Basin ⭐⭐
 
-Part 1 was nice and simple. Part 2 is going to be a little more complicated, but shouldn't be too tricky. I guess I just need to grow each low point until the border cells are peaks, then store the size of that so I can pick the top three at the end. 
+Part 1 was nice and simple. Part 2 is going to be a little more complicated, but shouldn't be too tricky. I guess I just need to grow each low point until the border cells are peaks, then store the size of that so I can pick the top three at the end.
+
+I opted to simply test each neighbouring cell that it exists and is less than 9. Starting with the lowest point, I construct a list of `newNeighbours` for the cells just found, and a larger list of `basinPoints`. I then repeat the search process on `newNeighbours` until there are none generated. The logic was simple but there was a lot of struggling with the python lists. This line
+```
+    [neighbour for neighbour in newNeighbours if (neighbour not in newSearchPoints) and (neighbour not in basinPoints)]
+```
+does **a lot** of heavy lifting, but I can't see a way to break it down without iterating multiple times.
 
 ## Day 10: ???
 
