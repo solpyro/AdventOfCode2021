@@ -96,7 +96,7 @@ Part 1 was nice and simple. Part 2 is going to be a little more complicated, but
 
 I opted to simply test each neighbouring cell that it exists and is less than 9. Starting with the lowest point, I construct a list of `newNeighbours` for the cells just found, and a larger list of `basinPoints`. I then repeat the search process on `newNeighbours` until there are none generated. The logic was simple but there was a lot of struggling with the python lists. This line
 ```
-    [neighbour for neighbour in newNeighbours if (neighbour not in newSearchPoints) and (neighbour not in basinPoints)]
+[neighbour for neighbour in newNeighbours if (neighbour not in newSearchPoints) and (neighbour not in basinPoints)]
 ```
 does **a lot** of heavy lifting, but I can't see a way to break it down without iterating multiple times.
 
@@ -161,13 +161,13 @@ So satisfying when part 2 is just 1 short function.
 
 ## Timings
 
-'''
+```
 from timeit import default_timer as timer
 start = timer()
 end = timer()
 print("parse time: "+"{:10.7f}".format(end-start))
 print("time: "+"{:10.7f}".format(end-start))
-'''
+```
 
 |        | Data Parse | Part 1    | Part 2    |
 | ------ | ---------- | --------- | --------- |
@@ -196,6 +196,5 @@ print("time: "+"{:10.7f}".format(end-start))
 | Day 23 |            |        |        |
 | Day 24 |            |        |        |
 | Day 25 |            |        |        |
-| ------ | ---------- | ------ | ------ |
 | Totals |            |        |        |
 | Grand Total |            |        |        |
