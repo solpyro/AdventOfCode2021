@@ -117,7 +117,14 @@ Many of my assumptions about part 2 were spot on. I had to write some very minor
     - `__str__` and `__repr__` for printing the objects prettily, although I don't think calling `__str__` from `__repr__` is the correct way to do it
 - using dictionaries as a stand-in for switch-case statements *(I miss them)*
 
-## Day 11: ???
+## Day 11: Dumbo Octopus ⭐
+
+The [behaviour of dumbo octopuses](https://adventofcode.com/2021/day/11) is a very interesting version of the [GoL](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life). I'll keep a link to the day here so I can come back and try to visually model it in Processing.
+
+Back to the task at hand though... I can't see a way to mathematically model this, so I think I'm just going to have to simulate the process. Let's hope the puzzle data isn't too horrible!  
+One complete simulation later, and I'm getting bad answers for the test data. At least one problem was that the `flash` function's neighbour referencing; I was incrementing cells between -1 and 1, without including the source coordinate in the references. Fixing that got us somewhat closer to the correct result, but it seems we're still not incrementing diagonal neighbours. A close look at the steps helped me realise that I was skipping the third column and row of the incrementing square, due to the rules of python's `range` function.
+
+
 
 ## Day 12: ???
 
