@@ -161,13 +161,21 @@ So satisfying when part 2 is just 1 short function.
 
 ## Timings
 
-|        | Data Parse | Part 1 | Part 2 |
-| ------ | ---------- | ------ | ------ |
-| Day 1  |            |        |        |
-| Day 2  |            |        |        |
-| Day 3  |            |        |        |
-| Day 4  |            |        |        |
-| Day 5  |            |        |        |
+'''
+from timeit import default_timer as timer
+start = timer()
+end = timer()
+print("parse time: "+"{:10.7f}".format(end-start))
+print("time: "+"{:10.7f}".format(end-start))
+'''
+
+|        | Data Parse | Part 1    | Part 2    |
+| ------ | ---------- | --------- | --------- |
+| Day 1  | -          | 0.0007390 | 0.0023072 |
+| Day 2  | -          | 0.0016153 | 0.0018041 |
+| Day 3  | -          | 0.0036569 | 0.0016066 |
+| Day 4  |  0.0028788 | 0.0282778 | 1.9087163 |
+| Day 5  |  0.0016026 | 0.3308574 | 0.4773194 |
 | Day 6  |            |        |        |
 | Day 7  |            |        |        |
 | Day 8  |            |        |        |
