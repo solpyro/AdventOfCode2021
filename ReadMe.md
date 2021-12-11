@@ -100,7 +100,22 @@ I opted to simply test each neighbouring cell that it exists and is less than 9.
 ```
 does **a lot** of heavy lifting, but I can't see a way to break it down without iterating multiple times.
 
-## Day 10: ???
+## Day 10: Syntax Scoring ⭐⭐
+
+Is... is this [BrainFuck](https://esolangs.org/wiki/Brainfuck)?
+
+My first thought was RegularExpressions, but I know that way lies folly. I could also probably do part 1 with some ugly string manipulation, but I know the *correct* way to do this is with a tree, and if I'm lucky I can implement the tools to solve part 2 at the same time.  
+Having built the node and parser, I wanted to test the parser & filtering before writing the tree walker. That's when I realised my filter wasn't working as the example suggested it should. Looking closer at the test data I see that corrupted lines can also be incomplete, while I'd implemented those tests supposing they would be separate cases.  
+Walking the tree wasn't as daunting as I'd first thought. once I got into it. And it's always nice to have a real excuse for some `recursion`!
+
+Many of my assumptions about part 2 were spot on. I had to write some very minor changes to the Fragment class, and not too much extra code in the solution functions.
+
+### Techniques leared
+
+- Python classes
+    - `__init__` as the constructor, taking `self` as the first argument, so you can reference the object's members
+    - `__str__` and `__repr__` for printing the objects prettily, although I don't think calling `__str__` from `__repr__` is the correct way to do it
+- using dictionaries as a stand-in for switch-case statements *(I miss them)*
 
 ## Day 11: ???
 
