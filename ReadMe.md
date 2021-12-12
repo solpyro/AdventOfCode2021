@@ -96,7 +96,7 @@ Part 1 was nice and simple. Part 2 is going to be a little more complicated, but
 
 I opted to simply test each neighbouring cell that it exists and is less than 9. Starting with the lowest point, I construct a list of `newNeighbours` for the cells just found, and a larger list of `basinPoints`. I then repeat the search process on `newNeighbours` until there are none generated. The logic was simple but there was a lot of struggling with the python lists. This line
 ```
-    [neighbour for neighbour in newNeighbours if (neighbour not in newSearchPoints) and (neighbour not in basinPoints)]
+[neighbour for neighbour in newNeighbours if (neighbour not in newSearchPoints) and (neighbour not in basinPoints)]
 ```
 does **a lot** of heavy lifting, but I can't see a way to break it down without iterating multiple times.
 
@@ -163,3 +163,43 @@ After mulling it over for a while, modifying the rules to allow one small cave w
 ## Day 24: ???
 
 ## Day 25: ???
+
+## Timings
+
+```
+from timeit import default_timer as timer
+start = timer()
+end = timer()
+print("parse time: "+"{:10.7f}".format(end-start))
+print("run time: "+"{:10.7f}".format(end-start))
+```
+
+|        | Data Parse | Part 1    | Part 2    |
+| ------ | ---------- | --------- | --------- |
+| Day 1  | -          | 0.0007390 | 0.0023072 |
+| Day 2  | -          | 0.0016153 | 0.0018041 |
+| Day 3  | -          | 0.0036569 | 0.0016066 |
+| Day 4  |  0.0028788 | 0.0282778 | 1.9087163 |
+| Day 5  |  0.0016026 | 0.3308574 | 0.4773194 |
+| Day 6  |  0.0002656 | 1.9297476 | 0.0002458 |
+| Day 7  | -          | 0.0016016 | 0.0080014 |
+| Day 8  |  0.0056113 | 0.0003129 | 0.0166624 |
+| Day 9  |  0.0054020 | 0.0160816 | 0.1398224 |
+| Day 10 |  0.0425948 | 0.1374579 | 0.0434851 |
+| Day 11 |  0.0000753 | 0.0594195 | 0.2384715 |
+| Day 12 |  0.0000371 | 0.0721894 | 5.9727943 |
+| Day 13 |            |        |        |
+| Day 14 |            |        |        |
+| Day 15 |            |        |        |
+| Day 16 |            |        |        |
+| Day 17 |            |        |        |
+| Day 18 |            |        |        |
+| Day 19 |            |        |        |
+| Day 20 |            |        |        |
+| Day 21 |            |        |        |
+| Day 22 |            |        |        |
+| Day 23 |            |        |        |
+| Day 24 |            |        |        |
+| Day 25 |            |        |        |
+| Totals |            |        |        |
+| Grand Total |            |        |        |
