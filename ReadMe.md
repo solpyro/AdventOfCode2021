@@ -166,7 +166,7 @@ from timeit import default_timer as timer
 start = timer()
 end = timer()
 print("parse time: "+"{:10.7f}".format(end-start))
-print("time: "+"{:10.7f}".format(end-start))
+print("run time: "+"{:10.7f}".format(end-start))
 ```
 
 |        | Data Parse | Part 1    | Part 2    |
@@ -180,9 +180,9 @@ print("time: "+"{:10.7f}".format(end-start))
 | Day 7  | -          | 0.0016016 | 0.0080014 |
 | Day 8  |  0.0056113 | 0.0003129 | 0.0166624 |
 | Day 9  |  0.0054020 | 0.0160816 | 0.1398224 |
-| Day 10 |            |        |        |
-| Day 11 |            |        |        |
-| Day 12 |            |        |        |
+| Day 10 |  0.0425948 | 0.1374579 | 0.0434851 |
+| Day 11 |  0.0000753 | 0.0594195 | 0.2384715 |
+| Day 12 |  0.0000371 | 0.0721894 | 5.9727943 |
 | Day 13 |            |        |        |
 | Day 14 |            |        |        |
 | Day 15 |            |        |        |
