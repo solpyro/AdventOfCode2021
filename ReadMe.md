@@ -131,12 +131,12 @@ One complete simulation later, and I'm getting bad answers for the test data. At
 As I mentioned before, I can't think of a way to calculate this mathematically, so I'll just run it until I see 100 flashes.  
 So satisfying when part 2 is just 1 short function.
 
-## Day 12: Passage Pathing ⭐
+## Day 12: Passage Pathing ⭐⭐
 
 I'm not too sure where to start here, traversing networks was never my strong suit. I guess I could check out the A* algorithm, although I guess that might be more important in part 2? At least I've mapped the data into a data structure that seems to make sense to me.  
 After wrestling with passing lists by reference, I realsied I eneded to copy the existing path as I passed it into the next step. Both the extra tests passed perfectly.
 
-
+After mulling it over for a while, modifying the rules to allow one small cave wasn't so hard after all.
 
 ## Day 13: ???
 
