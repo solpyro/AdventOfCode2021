@@ -145,6 +145,10 @@ More importantly, I was also getting bad data back for my dot count. It seems my
 
 And we're half way through the puzzles! Out of morbid curiosity, I thought I'd run part 2 against the dictionary implementation, even though I knew about the disappearing lines issue. I guess it didn't matter, because I got the correct answer first time. I even had the map printing method ready.
 
+### Techniques leared
+
+- Using *\*\*kwargs* to shallow copy and merge dictionaries with the pattern `dict3 = {**dict1, **dict2}`
+
 ## Day 14: ???
 
 ## Day 15: ???
