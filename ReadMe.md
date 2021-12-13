@@ -138,7 +138,12 @@ After wrestling with passing lists by reference, I realsied I eneded to copy the
 
 After mulling it over for a while, modifying the rules to allow one small cave wasn't so hard after all.
 
-## Day 13: ???
+## Day 13: Transparent Origami ⭐⭐
+
+I started with a simple y-first dictionary implementation of the coordinates. After a full implementation, including a utility to print the map, I realised that empty rows would collapse into nothing. Not a problem for part 1 (with the test data at least) but an issue to be mindful of none the less.  
+More importantly, I was also getting bad data back for my dot count. It seems my referencing of the target rows is off... because I was writing the merged rows into the lower half of the sheet, and then promptly deleting it.
+
+And we're half way through the puzzles! Out of morbid curiosity, I thought I'd run part 2 against the dictionary implementation, even though I knew about the disappearing lines issue. I guess it didn't matter, because I got the correct answer first time. I even had the map printing method ready.
 
 ## Day 14: ???
 
@@ -188,7 +193,7 @@ print("run time: "+"{:10.7f}".format(end-start))
 | Day 10 |  0.0425948 | 0.1374579 | 0.0434851 |
 | Day 11 |  0.0000753 | 0.0594195 | 0.2384715 |
 | Day 12 |  0.0000371 | 0.0721894 | 5.9727943 |
-| Day 13 |            |        |        |
+| Day 13 |  0.0038653 | 0.1530286 | 0.2168278 |
 | Day 14 |            |        |        |
 | Day 15 |            |        |        |
 | Day 16 |            |        |        |
