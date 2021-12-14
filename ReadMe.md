@@ -149,9 +149,12 @@ And we're half way through the puzzles! Out of morbid curiosity, I thought I'd r
 
 - Using *\*\*kwargs* to shallow copy and merge dictionaries with the pattern `dict3 = {**dict1, **dict2}`
 
-## Day 14: Extended Polymerization ⭐
+## Day 14: Extended Polymerization ⭐⭐
 
-Part 1 was quick and simple, and (as with day 6) I thought I'd made my solution general enough that I just needed to change the iteration argument for part 2. But of course the polymer is exponential, so this method is not efficient enough. 
+Part 1 was quick and simple, and (as with day 6) I thought I'd made my solution general enough that I just needed to change the iteration argument for part 2. But of course the polymer is exponential, so this method is not efficient enough.
+
+[u/Spirited-Airline4702](https://www.reddit.com/r/adventofcode/comments/rfzq6f/2021_day_14_solutions/hohrdqe/)'s solution should be a cleaner implementation, and after some careful examination of the code I think I understand how it works. I can take heart in that I have a better counting solution by avoiding the double count. For some reason I'm getting bad results, even though I can't see any issues with my implementation.  
+It turns out my implementation was fine, but the counts for each letter were so large that they exceded `sys.maxsize`, so my search for the smallest value was actually returning `sys.maxsize`. In the end, I used `float('inf')` which is always higher than any other number.
 
 ## Day 15: ???
 
