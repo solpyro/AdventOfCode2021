@@ -149,7 +149,9 @@ And we're half way through the puzzles! Out of morbid curiosity, I thought I'd r
 
 - Using *\*\*kwargs* to shallow copy and merge dictionaries with the pattern `dict3 = {**dict1, **dict2}`
 
-## Day 14: ???
+## Day 14: Extended Polymerization ⭐
+
+Part 1 was quick and simple, and (as with day 6) I thought I'd made my solution general enough that I just needed to change the iteration argument for part 2. But of course the polymer is exponential, so this method is not efficient enough. 
 
 ## Day 15: ???
 
@@ -198,7 +200,7 @@ print("run time: "+"{:10.7f}".format(end-start))
 | Day 11 |  0.0000753 | 0.0594195 | 0.2384715 |
 | Day 12 |  0.0000371 | 0.0721894 | 5.9727943 |
 | Day 13 |  0.0038653 | 0.1530286 | 0.2168278 |
-| Day 14 |            |        |        |
+| Day 14 |  0.0001766 | 0.0261693 |        |
 | Day 15 |            |        |        |
 | Day 16 |            |        |        |
 | Day 17 |            |        |        |
