@@ -164,6 +164,8 @@ It turns out my implementation was fine, but the counts for each letter were so 
 
 ## Day 15: Chiton
 
+Well this seems like the A* algorithm to me; let's implement it acccording to the [wikipedia article](https://en.wikipedia.org/wiki/A*_search_algorithm). I think that was the first time I've implemented an A*, it's pretty similar to the shape I had in my head, but probably otimized a little better. 
+
 ## Day 16: ???
 
 ## Day 17: ???
@@ -210,7 +212,7 @@ print("run time: "+"{:10.7f}".format(end-start))
 | Day 12 |  0.0000371 | 0.0721894 | 5.9727943 |
 | Day 13 |  0.0038653 | 0.1530286 | 0.2168278 |
 | Day 14 |  0.0001766 | 0.0261693 | 0.0038486 |
-| Day 15 |            |        |        |
+| Day 15 |  0.0037191 | 0.4255411 |        |
 | Day 16 |            |        |        |
 | Day 17 |            |        |        |
 | Day 18 |            |        |        |
