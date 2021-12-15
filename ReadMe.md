@@ -156,7 +156,13 @@ Part 1 was quick and simple, and (as with day 6) I thought I'd made my solution 
 [u/Spirited-Airline4702](https://www.reddit.com/r/adventofcode/comments/rfzq6f/2021_day_14_solutions/hohrdqe/)'s solution should be a cleaner implementation, and after some careful examination of the code I think I understand how it works. I can take heart in that I have a better counting solution by avoiding the double count. For some reason I'm getting bad results, even though I can't see any issues with my implementation.  
 It turns out my implementation was fine, but the counts for each letter were so large that they exceded `sys.maxsize`, so my search for the smallest value was actually returning `sys.maxsize`. In the end, I used `float('inf')` which is always higher than any other number.
 
-## Day 15: ???
+### Techniques leared
+
+- Using `defaultdict` to create dictionaries with a default value, rather than having to first check if the key has been instantiated
+- `sys.maxsize` returns the maximum word size on the system, but note that python integers can be manyn words long
+- `float('inf')` will **always** be more than a real number
+
+## Day 15: Chiton
 
 ## Day 16: ???
 
