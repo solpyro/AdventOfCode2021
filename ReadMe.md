@@ -162,9 +162,16 @@ It turns out my implementation was fine, but the counts for each letter were so 
 - `sys.maxsize` returns the maximum word size on the system, but note that python integers can be manyn words long
 - `float('inf')` will **always** be more than a real number
 
-## Day 15: Chiton
+## Day 15: Chiton ⭐⭐
 
-Well this seems like the A* algorithm to me; let's implement it acccording to the [wikipedia article](https://en.wikipedia.org/wiki/A*_search_algorithm). I think that was the first time I've implemented an A*, it's pretty similar to the shape I had in my head, but probably otimized a little better. 
+Well this seems like the A* algorithm to me; let's implement it acccording to the [wikipedia article](https://en.wikipedia.org/wiki/A*_search_algorithm). I think that was the first time I've implemented an A*, it's pretty similar to the shape I had in my head, but probably otimized a little better.
+
+Part 2 seems like the only way is to brute-force it by extending the map and running the A* again. That seems ok for the test data (taking just 0.0388030s) but the puzzle input takes 31 seconds to calculate. Having said that; it gets me the right answer, so is it wrong?
+
+### Techniques leared
+
+- A* algorithm
+- sorting a list by a function of the element: `list.sort(key=lambda element: function(element))`
 
 ## Day 16: ???
 
