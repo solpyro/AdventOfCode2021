@@ -173,7 +173,9 @@ Part 2 seems like the only way is to brute-force it by extending the map and run
 - A* algorithm
 - sorting a list by a function of the element: `list.sort(key=lambda element: function(element))`
 
-## Day 16: ???
+## Day 16: Packet Decoder ⭐
+
+This was another day where there was too much information to take in all at once, but after a back and forth between implementing and reading the documentation, I was able to build a data structure and parser that could read the input and build a tree of packets. Everyhting seemed good, except that one of the four examples gave me the wrong result. I didn't go to the effort of manually decoding the packet, but since the other three gave correct answers, I'm reletively confident it's a problem in the test. To reinforce that, my puzzle input also returned the correct result.
 
 ## Day 17: ???
 
@@ -195,14 +197,6 @@ Part 2 seems like the only way is to brute-force it by extending the map and run
 
 ## Timings
 
-```
-from timeit import default_timer as timer
-start = timer()
-end = timer()
-print("parse time: "+"{:10.7f}".format(end-start))
-print("run time: "+"{:10.7f}".format(end-start))
-```
-
 |             | Data Parse | Part 1    | Part 2     |
 | ----------- | ---------- | --------- | ---------- |
 | Day 1       | -          | 0.0007390 |  0.0023072 |
@@ -220,7 +214,7 @@ print("run time: "+"{:10.7f}".format(end-start))
 | Day 13      |  0.0038653 | 0.1530286 |  0.2168278 |
 | Day 14      |  0.0001766 | 0.0261693 |  0.0038486 |
 | Day 15      |  0.0037191 | 0.4255411 | 31.7277731 |
-| Day 16      |            |           |            |
+| Day 16      |  0.0025020 | 0.0003694 |            |
 | Day 17      |            |           |            |
 | Day 18      |            |           |            |
 | Day 19      |            |           |            |
