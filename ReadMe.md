@@ -177,6 +177,8 @@ Part 2 seems like the only way is to brute-force it by extending the map and run
 
 This was another day where there was too much information to take in all at once, but after a back and forth between implementing and reading the documentation, I was able to build a data structure and parser that could read the input and build a tree of packets. Everyhting seemed good, except that one of the four examples gave me the wrong result. I didn't go to the effort of manually decoding the packet, but since the other three gave correct answers, I'm reletively confident it's a problem in the test. To reinforce that, my puzzle input also returned the correct result.
 
+Part 2's all new test data highlights some issues. Clearly that incorrect result in part 1 was my parser, not the test definition. At least part of the issue was with converting the hex string to int and then to binary string, losing leading zeros as we do. Fixing that fixed a good number of the failing test cases, but there's still another issue with `9C0141080250320F1802104A08` and my puzzle input in part 2.
+
 ## Day 17: ???
 
 ## Day 18: ???
